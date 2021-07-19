@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+hgroup{
+    text-align: center;
+    background-color: rgb(88, 87, 87);
+    width: 70vw;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px auto;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(212, 0, 0);
+    border: 2px solid rgb(212, 0, 0);
+    box-shadow: 3px 0 3px 3px rgb(22, 22, 22);
+}
+
+hgroup:hover{
+    background-color: rgb(95, 95, 95);
+    transition: 2s;
+    color: rgb(87, 3, 3);
+    border-color: rgb(87, 3, 3);
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin: 10px;
+    border-radius: 100%;
+    padding: 4px;
+    cursor: pointer;
+    box-shadow: 3px 0 3px 3px rgb(22, 22, 22);
+}
+
+#resultado{
+    display: flex;
+    justify-content: center;
+}
+
+#maquina{
+    display: flex;
+    flex-direction: row;
+}
+
+#resposta{
+    color: rgb(212, 0, 0);
+    font-Weight: bold;
+    background-color: rgb(88, 87, 87);
+    border-radius: 5px;
+    width: 6vw;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 3px 0 3px 3px rgb(22, 22, 22);
+}
+
+@media only screen and (min-width: 768px) {
+    hgroup{
+        width: 25vw;
+    }
+}
