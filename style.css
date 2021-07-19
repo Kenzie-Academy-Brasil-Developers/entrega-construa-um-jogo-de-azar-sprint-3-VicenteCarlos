@@ -16,6 +16,19 @@ hgroup{
     box-shadow: 3px 0 3px 3px rgb(22, 22, 22);
 }
 
+button{
+    color: rgb(212, 0, 0);
+    border-radius: 5px;
+    box-shadow: 3px 0 3px 3px rgb(22, 22, 22);
+    background-color: rgb(88, 87, 87);
+    font-size: 30px;
+    width: 120px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    margin: 0 auto;
+}
+
 hgroup:hover{
     background-color: rgb(95, 95, 95);
     transition: 2s;
@@ -34,6 +47,7 @@ img {
     padding: 4px;
     cursor: pointer;
     box-shadow: 3px 0 3px 3px rgb(22, 22, 22);
+    width: 60px;
 }
 
 #resultado{
@@ -60,6 +74,6 @@ img {
 
 @media only screen and (min-width: 768px) {
     hgroup{
-        width: 25vw;
+        width: 35vw;
     }
 }

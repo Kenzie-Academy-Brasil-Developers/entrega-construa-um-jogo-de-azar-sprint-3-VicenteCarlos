@@ -1,6 +1,7 @@
 const pedra = document.getElementById('pedra');
 const tesoura = document.getElementById('tesoura');
 const papel = document.getElementById('papel');
+const reset = document.getElementById('reset');
 
 function random () {
     let aleatorio2 = Math.floor(Math.random() * 3) + 1;
@@ -12,21 +13,22 @@ function random () {
     if (aleatorio2===maoPapel){
         let div = document.getElementById('maquina');
         div.appendChild(papel);
-        console.log(aleatorio2);
         return aleatorio2;
     } else if (aleatorio2===maoTesoura){
         let div = document.getElementById('maquina');
         div.appendChild(tesoura);
-        console.log(aleatorio2);
         return aleatorio2;
     } else if (aleatorio2===maoPedra){
         let div = document.getElementById('maquina');
         div.appendChild(pedra);
-        console.log(aleatorio2);
         return aleatorio2;
     } 
 
 }
+
+reset.addEventListener('click', () =>{
+    location.reload();
+});
 
 pedra.addEventListener('click', () => {
     
@@ -44,6 +46,7 @@ pedra.addEventListener('click', () => {
     if (aleatorio===maoTesoura){
         let div2 = document.getElementById('resposta')
         let text = document.createTextNode('Você venceu');
+        div2.style.width = "100px";
         div2.appendChild(text);
         return aleatorio;    
     } 
@@ -51,6 +54,7 @@ pedra.addEventListener('click', () => {
     if (aleatorio===maoPapel){
         let div2 = document.getElementById('resposta')
         let text = document.createTextNode('Você perdeu');
+        div2.style.width = "100px";
         div2.appendChild(text);
         return aleatorio;
     } 
@@ -58,6 +62,7 @@ pedra.addEventListener('click', () => {
     if (aleatorio===maoPedra){
         let div2 = document.getElementById('resposta')
         let text = document.createTextNode('Você empatou');
+        div2.style.width = "100px";
         div2.appendChild(text);
         return aleatorio;
     }
@@ -80,6 +85,7 @@ tesoura.addEventListener('click', () => {
     if (aleatorio===maoPapel){
         let div2 = document.getElementById('resposta')
         let text = document.createTextNode('Você venceu');
+        div2.style.width = "100px";
         div2.appendChild(text);
         return aleatorio;
 
@@ -88,6 +94,7 @@ tesoura.addEventListener('click', () => {
     if (aleatorio===maoPedra){
         let div2 = document.getElementById('resposta')
         let text = document.createTextNode('Você perdeu');
+        div2.style.width = "100px";
         div2.appendChild(text);
         console.log("você perdeu");
         
@@ -98,6 +105,7 @@ tesoura.addEventListener('click', () => {
     if (aleatorio===maoTesoura){
         let div2 = document.getElementById('resposta')
         let text = document.createTextNode('Você empatou');
+        div2.style.width = "100px";
         div2.appendChild(text);
         return aleatorio;
         ;
@@ -121,6 +129,7 @@ papel.addEventListener('click', () => {
     if (aleatorio===maoPedra){
         let div2 = document.getElementById('resposta')
         let text = document.createTextNode('Você venceu');
+        div2.style.width = "100px";
         div2.style.textAlign = "center";
         div2.appendChild(text);
         return aleatorio;
@@ -130,6 +139,7 @@ papel.addEventListener('click', () => {
     if (aleatorio===maoTesoura){
         let div2 = document.getElementById('resposta')
         let text = document.createTextNode('Você perdeu');
+        div2.style.width = "100px";
         div2.appendChild(text);
         return aleatorio;
 
@@ -138,6 +148,7 @@ papel.addEventListener('click', () => {
     if (aleatorio===maoPapel){
         let div2 = document.getElementById('resposta')
         let text = document.createTextNode('Você empatou');
+        div2.style.width = "100px";
         div2.appendChild(text);
         return aleatorio;
 
