@@ -121,6 +121,7 @@ papel.addEventListener('click', () => {
 
     let aleatorio = random();
     
+    
     let div = document.getElementById('resultado');
     let span = document.createElement('span');
     span.appendChild(papel);
