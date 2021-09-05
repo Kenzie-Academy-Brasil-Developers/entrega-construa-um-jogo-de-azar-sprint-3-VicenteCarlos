@@ -5,25 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
-    <div class="container">
-        <hgroup>
-            <h1>Pedra, Papel e Tesoura!</h1>
-            <h2>É ganhar ou perder</h2>
-        </hgroup>
-        <button id="reset">Reset</button>
-        <figure>
-            <img src="./icons8-ok-hand.gif" id="papel" width="100" alt="papel">
-            <img src="./icons8-hand-scissors.gif" id="tesoura" width="100" alt="tesoura">
-            <img src="./icons8-thumbs-up.gif" id="pedra" width="100" alt="pedra">
-        </figure>
-        <div id="resultado"><div id="maquina"></div></div>
-        <div id="resposta"></div>
-    </div>
-    
-    <script src="script.js"></script>
+    <main>
+        <h1>Magic 8-Ball</h1>
+        <div class="fundo" id="fundo2">
+            <div class="tela" id="tela2"><span id="hidden">8</span></div>
+        </div>
+        <input type="text" placeholder="Faça a sua pergunta">
+        <button id="enter">Enter</button>
+    </main>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
