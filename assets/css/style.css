@@ -1,6 +1,5 @@
 html {
-    background-image: url(/assets/img/bolas-de-bilhar.jpg);
-    filter: grayscale(50%);
+    background-color: darkgrey;
 }
 
 main {
